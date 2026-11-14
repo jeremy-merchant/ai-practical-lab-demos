@@ -50,3 +50,4 @@ Visit [ChatGPT JSON / ad CSV format pre-check](https://latpeed-ai-lab-preview.pa
 - Local File API; no file data is sent over the network, no ad pixels and no analytics SDK.
 - The result is a preliminary structural check, **not a promise the paid application will import the file**.
 - The free source and all restrictions are transparent in check/check.js.
+\n## Support\nBuyer questions: https://latpeed-ai-lab-preview.pages.dev/contact/. Do not send sensitive JSON or ads data in email.\n
