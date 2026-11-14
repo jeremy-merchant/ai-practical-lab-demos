@@ -61,3 +61,8 @@ test("Attribution script never transmits or stores user data", () => {
     assert.equal(script.includes(pattern), false, pattern);
   }
 });
+
+test("Korean SaaS directory referrer is preserved without cookies", () => {
+  const links = execute("", "https://saaskr.com/saas/ai-practical-lab");
+  assert.equal(new URL(links[1].href).searchParams.get("utm_source"), "saaskr");
+});

@@ -6,7 +6,7 @@
  */
 (() => {
   const allowedSources = new Set([
-    "cozit", "dreamboat", "ignlab_launch", "seodatapulse",
+    "cozit", "dreamboat", "ignlab_launch", "seodatapulse", "saaskr",
     "launchingnext", "github", "disquiet", "producthunt",
     "indiehackers", "reddit", "newsletter"
   ]);
@@ -15,6 +15,7 @@
     ["dreamboat.kr", "dreamboat"],
     ["launch.ignlab.net", "ignlab_launch"],
     ["seodatapulse.com", "seodatapulse"],
+    ["saaskr.com", "saaskr"],
     ["launchingnext.com", "launchingnext"],
     ["github.com", "github"],
     ["disquiet.io", "disquiet"],
