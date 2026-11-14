@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://latpeed-ai-lab-preview.pages.dev/sitemap.xml

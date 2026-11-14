@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="theme-color" content="#f6f8f2">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
 <meta name="description" content="설치 없이 바로 체험하는 오프라인 업무 도구. ChatGPT 대화 검색 Archive Lens 1.1과 Meta·Moloco 광고 CSV 분석 AdPilot Lite 1.1의 가상 데이터 미리보기.">
 <meta property="og:type" content="website">
 <meta property="og:title" content="AI 실전 제작소 | 실전 도구 무료 체험">
@@ -15,24 +16,17 @@
 <meta name="twitter:card" content="summary_large_image">
 <link rel="canonical" href="https://latpeed-ai-lab-preview.pages.dev/">
 <title>AI 실전 제작소 | 오프라인 도구 무료 체험</title>
-<style>
-:root{color-scheme:light;--ink:#1b3028;--muted:#60776b;--line:#d9e2d8;--white:#fff;--mint:#d6f4df;--leaf:#246645;--cream:#f6f8f2}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:system-ui,-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;letter-spacing:-.018em}
-button,input{font:inherit}button{cursor:pointer}a{color:inherit}header{position:sticky;top:0;background:rgba(246,248,242,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--line);z-index:10}
-nav,.wrap{max-width:1140px;margin:auto;padding:0 24px}nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:16px}nav .brand{font-weight:850;font-size:18px;letter-spacing:-.05em;text-decoration:none}nav .brand span{display:inline-block;background:var(--ink);color:white;border-radius:9px;padding:5px 9px;margin-right:10px;font-size:14px}nav .links{display:flex;gap:19px;align-items:center;font-size:13px;font-weight:700}nav .links a{text-decoration:none}.toplink{background:#213d2d;color:#fff;padding:10px 15px;border-radius:10px}
-.hero{padding:85px 0 56px;display:grid;grid-template-columns:1.1fr .9fr;gap:28px;align-items:center}.eyebrow{font-size:11px;letter-spacing:.22em;font-weight:850;color:#427c58}.hero h1{font-size:clamp(40px,6vw,74px);line-height:1.14;letter-spacing:-.075em;margin:16px 0 20px;font-weight:850}.hero p{font-size:18px;line-height:1.75;color:#5b7266;max-width:570px}.actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:29px}.btn{border:1px solid var(--ink);background:var(--ink);color:#fff;border-radius:11px;padding:14px 20px;font-weight:800;text-decoration:none;display:inline-flex;align-items:center;justify-content:center}.btn.secondary{background:transparent;color:var(--ink)}.btn:focus-visible,button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #51aa76;outline-offset:3px}
-.hero-art{background:#dfecdf;border:1px solid #c9dacb;border-radius:28px;padding:30px;min-height:360px;display:flex;flex-direction:column;gap:16px;justify-content:center;transform:rotate(1deg)}
-.mock{border:1px solid #d7e2d9;background:white;border-radius:15px;padding:17px 20px;box-shadow:0 12px 30px #24462f0f}.mock:nth-child(2){margin-left:32px}.mock .mini{font-size:10px;font-weight:800;letter-spacing:.1em;color:#438365}.mock strong{display:block;margin-top:7px;font-size:20px;letter-spacing:-.05em}.bars{display:flex;gap:7px;height:45px;align-items:end;margin-top:12px}.bars i{display:block;background:#77c495;border-radius:4px 4px 0 0;flex:1}.bars i:nth-child(2n){background:#c1e8d0}
-.note{border-top:1px solid var(--line);padding:19px 0;color:var(--muted);font-size:13px}.note strong{color:var(--ink)}.section-head{padding:75px 0 20px}.section-head h2{font-size:clamp(29px,4vw,45px);line-height:1.3;letter-spacing:-.06em;margin:12px 0 7px}.section-head p{margin:0;color:var(--muted);font-size:15px;line-height:1.7}
-.demo{display:grid;grid-template-columns:0.38fr .62fr;border:1px solid var(--line);background:white;border-radius:22px;overflow:hidden;min-height:475px;box-shadow:0 25px 60px #16342109}.side{background:#19302a;color:#fff;padding:28px;display:flex;flex-direction:column;gap:18px}.side .line{color:#96dcc0;letter-spacing:.17em;font-weight:800;font-size:11px}.side h3{font-size:31px;line-height:1.23;letter-spacing:-.045em;margin:8px 0}.side p{font-size:14px;line-height:1.75;color:#bbd4c9;margin:0}.side .bullet{font-size:13px;line-height:1.65;color:#c5e1d3}.side .bullet b{color:white}.side .btn{background:#c9f2dc;color:#153525;border-color:#c9f2dc;margin-top:auto}.side .price{font-size:12px;color:#a6d4bd;margin-top:10px}.panel{padding:28px 30px;min-width:0}.panel-label{font-size:11px;color:#53906e;font-weight:800;letter-spacing:.17em}.panel-title{font-weight:800;font-size:22px;letter-spacing:-.04em;margin:8px 0 22px}
-.search{width:100%;border:1px solid #d2dfd7;border-radius:11px;background:#f5f8f5;padding:13px 14px;outline:none}.search:focus{border-color:#4b956e}.sample-bar{font-size:12px;color:#65776e;background:#f1f6f2;border:1px solid #e2ebe2;border-radius:9px;margin:10px 0 15px;padding:9px 12px}.archive-layout{display:grid;grid-template-columns:38% 62%;gap:14px}.chat-list{display:flex;flex-direction:column;gap:8px}.chat-list button{border:1px solid #e1eae3;padding:12px;border-radius:10px;background:#fff;text-align:left;color:#18372b;font-size:12px;font-weight:800;line-height:1.5}.chat-list button.active,.chat-list button:hover{background:#e7f7eb;border-color:#75b992}.chat-list button small{display:block;font-size:11px;font-weight:400;color:#75917e;margin-top:3px}.chat-body{border:1px solid #e1eae3;border-radius:12px;padding:17px;background:#fbfdfa;min-height:242px;overflow-wrap:anywhere}.chat-body h4{margin:0 0 13px;font-size:15px}.bubble{padding:11px 12px;margin:9px 0;border:1px solid #e1ebe2;border-radius:9px;background:white;font-size:12px;line-height:1.7}.bubble strong{display:block;margin-bottom:3px;font-size:11px;color:#487f5c}.bubble.ai{background:#e7f4eb}
-.metric-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:18px 0}.metric{background:#f4f9f4;border:1px solid #e1eee2;border-radius:11px;padding:16px}.metric .label{font-size:12px;color:#5b7d64}.metric .number{margin-top:12px;font-weight:800;font-size:23px;letter-spacing:-.045em}.metric small{display:block;color:#72917d;font-size:11px;margin-top:6px}.ad-select{display:flex;gap:9px;flex-wrap:wrap}.ad-select button{border:1px solid #d5e3d7;padding:10px 13px;border-radius:9px;background:white;font-weight:700;font-size:12px;color:#33533e}.ad-select button.active{background:#203d2d;border-color:#203d2d;color:white}
-.ad-chart{border:1px solid #e5ede5;border-radius:12px;padding:17px;margin-top:12px}.ad-chart header{position:static;background:transparent;border:0;font-size:12px;color:#55745e;font-weight:800;display:flex;justify-content:space-between}.cols{display:flex;height:117px;align-items:flex-end;gap:11px;border-bottom:1px solid #b9ccb8;margin-top:15px}.bar-col{flex:1;display:flex;flex-direction:column;justify-content:flex-end;height:100%;gap:2px}.bar-col div{background:#8ccb9d;border-radius:4px 4px 0 0;min-height:4px}.bar-col:nth-child(2n) div{background:#3e9669}.bar-legend{display:flex;justify-content:space-between;margin-top:8px;color:#9cab9d;font-size:10px}.tip{background:#eff7f0;border-left:4px solid #58a678;border-radius:7px;margin-top:15px;padding:13px;font-size:12px;line-height:1.65}
-.explain{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:65px 0}.explain article{padding:25px;border:1px solid var(--line);border-radius:15px;background:#fff}.explain article strong{font-size:17px}.explain p{font-size:13px;color:var(--muted);line-height:1.7;margin-bottom:0}.final{background:#1d362c;color:#fff;border-radius:22px;padding:50px;margin:34px 0 70px;display:flex;align-items:center;justify-content:space-between;gap:25px}.final h2{margin:0 0 11px;font-size:32px;letter-spacing:-.05em}.final p{margin:0;color:#b0d2c0;line-height:1.7;font-size:14px}.final .btn{background:#c6f0d7;color:#163829;border-color:#c6f0d7;white-space:nowrap}footer{border-top:1px solid var(--line);padding:34px 0 48px;color:var(--muted);font-size:12px;line-height:1.9}footer a{text-decoration:underline}
-@media(max-width:800px){.hero{grid-template-columns:1fr;padding:57px 0 28px}.hero-art{min-height:245px;transform:none;padding:18px}.hero h1{font-size:48px}.demo{grid-template-columns:1fr}.side .btn{margin-top:10px}.section-head{padding-top:46px}.explain{grid-template-columns:1fr;gap:11px;margin:42px 0}.final{padding:30px;flex-direction:column;align-items:flex-start}.archive-layout{grid-template-columns:1fr}.chat-list{display:grid;grid-template-columns:repeat(3,1fr)}.chat-list button{font-size:11px;padding:9px}}
-@media(max-width:480px){nav,.wrap{padding-left:17px;padding-right:17px}nav .links{gap:10px}nav .links a:not(.toplink){display:none}.hero h1{font-size:40px}.hero p{font-size:15px}.panel{padding:22px 16px}.metric-grid{gap:6px}.metric{padding:10px}.metric .number{font-size:17px}.chat-list{grid-template-columns:1fr}.chat-list button{padding:11px}.final{margin-top:25px}.side{padding:25px}.side h3{font-size:26px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
-</style>
+<link rel="stylesheet" href="styles.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "AI 실전 제작소 — 무료 도구 체험",
+  "url": "https://latpeed-ai-lab-preview.pages.dev/",
+  "inLanguage": "ko-KR",
+  "description": "개인 데이터 없이 가상 샘플로 체험하는 로컬 업무 도구: Archive Lens 대화 검색과 AdPilot Lite 광고 KPI 비교."
+}
+</script>
 </head>
 <body>
 <header><nav><a href="#top" class="brand"><span>AI</span>실전 제작소</a><div class="links"><a href="#archive">대화 검색</a><a href="#adpilot">광고 분석</a><a href="https://www.latpeed.com/products/sb5ge?utm_source=ai_lab_demo&utm_medium=owned_site&utm_campaign=launch_20261114&utm_content=adpilot" class="toplink">전체 기능 보기</a></div></nav></header>
@@ -58,41 +52,5 @@ nav,.wrap{max-width:1140px;margin:auto;padding:0 24px}nav{min-height:70px;displa
 <div class="final"><div><h2>필요한 기능만 선택하세요.</h2><p>이 페이지는 무료 데모입니다. 전체 기능과 최신 구매 조건은 래피드 판매 페이지에서 확인해 주세요.</p></div><a class="btn" href="https://www.latpeed.com/products/tej54?utm_source=ai_lab_demo&utm_medium=owned_site&utm_campaign=launch_20261114&utm_content=archive">대화 검색 도구 확인하기 ↗</a></div>
 </main>
 <footer><div class="wrap">AI 실전 제작소 — 개인 개발 디지털 도구 미리보기 · ChatGPT/OpenAI, Meta, Moloco 공식 제품이나 제휴 서비스가 아닙니다.<br>이 사이트는 개인정보 입력·파일 업로드·광고 추적 스크립트를 사용하지 않습니다. 웹 호스팅 사업자의 표준 접속 로그는 별도로 처리될 수 있습니다. 취소·환불·결제 조건은 <a href="https://www.latpeed.com/products/sb5ge?utm_source=ai_lab_demo&utm_medium=owned_site&utm_campaign=launch_20261114&utm_content=adpilot">래피드 판매 페이지</a>를 참고하세요.</div></footer>
-<script>
-'use strict';
-(function(){
-const chats=[
-{title:'광고 보고서 기획',date:'2026.11.09',messages:[['사용자','광고 보고서에 어떤 지표가 필요해?'],['어시스턴트','기간, 매체, 광고비, 설치 수, 전환 이벤트 정의를 먼저 정리해 보세요.']]},
-{title:'영상 제작 워크플로',date:'2026.11.08',messages:[['사용자','여러 짧은 영상 클립을 조립하려면?'],['어시스턴트','클립 해상도와 프레임 속도를 먼저 확인하고, 순서를 고정한 후 출력 영상을 재생해 검수합니다.']]},
-{title:'자동화 인수인계',date:'2026.11.07',messages:[['사용자','자동화 프로젝트를 다른 담당자에게 넘기려면?'],['어시스턴트','실행 환경, 입력 데이터, 완료 기준, 검증 결과, 남은 위험을 기록하세요.']]}]
-let selected=0;
-const list=document.getElementById('chatList'),body=document.getElementById('chatBody'),query=document.getElementById('query'),count=document.getElementById('archiveCount');
-function render(){
- const q=query.value.trim().toLocaleLowerCase(),matches=chats.map((v,i)=>({v,i})).filter(o=>(o.v.title+' '+o.v.messages.map(m=>m[1]).join(' ')).toLocaleLowerCase().includes(q));
- count.textContent=matches.length+'개 가상 대화 검색 결과 · 실데이터 없음';
- if(!matches.find(o=>o.i===selected)) selected=matches.length?matches[0].i:-1;
- list.replaceChildren();
- matches.forEach(o=>{const btn=document.createElement('button');btn.type='button';btn.className=o.i===selected?'active':'';btn.textContent=o.v.title;const small=document.createElement('small');small.textContent=o.v.date;btn.appendChild(small);btn.onclick=function(){selected=o.i;render()};list.appendChild(btn)});
- body.replaceChildren();
- if(selected===-1){const d=document.createElement('p');d.textContent='해당 단어를 포함한 가상 대화가 없습니다.';body.appendChild(d);return}
- const c=chats[selected],h=document.createElement('h4');h.textContent=c.title;body.appendChild(h);
- c.messages.forEach(m=>{const bubble=document.createElement('div');bubble.className='bubble'+(m[0]==='어시스턴트'?' ai':'');const label=document.createElement('strong');label.textContent=m[0];const content=document.createElement('span');content.textContent=m[1];bubble.append(label,content);body.appendChild(bubble)})
-}
-query.addEventListener('input',render);render();
-const data={
-a:{name:'릴스 광고 A',prev:[{s:35500,i:11},{s:38000,i:12},{s:38500,i:11},{s:41500,i:11},{s:41200,i:11},{s:42500,i:10},{s:43000,i:10}],now:[{s:44000,i:10},{s:45800,i:9},{s:47600,i:11},{s:49000,i:10},{s:50500,i:8},{s:52100,i:9},{s:53900,i:9}]},
-b:{name:'피드 광고 B',prev:[{s:44000,i:14},{s:42000,i:15},{s:42500,i:14},{s:42000,i:15},{s:41800,i:17},{s:40500,i:17},{s:40000,i:18}],now:[{s:39800,i:19},{s:39400,i:19},{s:39000,i:19},{s:38900,i:20},{s:38400,i:21},{s:38000,i:23},{s:37800,i:24}]}}
-const won=n=>'₩'+Math.round(n).toLocaleString('ko-KR'),sum=(a,k)=>a.reduce((n,o)=>n+o[k],0);
-function showAd(key){
- const item=data[key],total=sum(item.now,'s'),installs=sum(item.now,'i'),prevCpi=sum(item.prev,'s')/sum(item.prev,'i'),cpi=total/installs,delta=(cpi/prevCpi-1)*100;
- document.getElementById('spend').textContent=won(total);document.getElementById('installs').textContent=installs.toLocaleString('ko-KR');document.getElementById('cpi').textContent=won(cpi);
- document.getElementById('delta').textContent='전주 대비 '+(delta>0?'+':'')+delta.toFixed(1)+'%';
- const chart=document.getElementById('adBars');chart.replaceChildren();const max=Math.max(...item.now.map(v=>v.s));
- item.now.forEach(v=>{const col=document.createElement('div');col.className='bar-col';const bar=document.createElement('div');bar.style.height=Math.round(v.s/max*100)+'%';col.append(bar);chart.append(col)});
- document.getElementById('adTip').textContent=delta>0?'가상 샘플: CPI가 증가했습니다. 전환 이벤트·표본·소재 변경 이력을 확인하세요. 원인을 단정하지 않습니다.':'가상 샘플: CPI가 낮아졌습니다. 귀속·이벤트 정의와 표본 조건이 동일한지 확인하세요.';
- document.querySelectorAll('[data-ad]').forEach(b=>b.classList.toggle('active',b.dataset.ad===key))
-}
-document.querySelectorAll('[data-ad]').forEach(b=>b.addEventListener('click',()=>showAd(b.dataset.ad)));showAd('a');
-})();
-</script>
+<script src="app.js" defer></script>
 </body></html>
