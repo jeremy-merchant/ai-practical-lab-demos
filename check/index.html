@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#f7faf7">
+<meta name="description" content="ChatGPT conversations.json과 Meta·Moloco 광고 CSV의 기본 구조를 무료로 확인하세요. 파일 업로드·회원가입 없이 브라우저에서만 검사합니다.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="ChatGPT JSON·광고 CSV 무료 파일 검사 | AI 실전 제작소">
+<meta property="og:description" content="파일이 내 도구에 적합한지 구매 전 미리 확인. 모든 검사는 브라우저 내부에서만 실행됩니다.">
+<meta property="og:url" content="https://latpeed-ai-lab-preview.pages.dev/check/">
+<meta property="og:image" content="https://latpeed-ai-lab-preview.pages.dev/preview.png">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://latpeed-ai-lab-preview.pages.dev/check/">
+<link rel="stylesheet" href="./check.css">
+<title>ChatGPT JSON·광고 CSV 무료 파일 검사 | AI 실전 제작소</title>
+<script src="./check.js" defer></script>
+</head>
+<body>
+<header><div class="nav"><a class="brand" href="/">AI <span>실전 제작소</span></a><a href="/" class="nav-link">← 무료 체험으로 돌아가기</a></div></header>
+<main>
+<div class="intro"><div class="eyebrow">LOCAL FILE PRE-CHECK · FREE</div><h1>구매 전,<br>내 파일부터 확인하세요.</h1><p class="lead">내보낸 ChatGPT 대화 JSON이나 광고 CSV를 브라우저에서 직접 확인해 보세요. <strong>파일은 서버로 전송되지 않으며</strong> 실제 검색·분석은 수행하지 않는 <strong>기본 형식 점검</strong>입니다.</p><div class="trust"><span>✓ 로그인 없음</span><span>✓ 외부 업로드 없음</span><span>✓ 원문 미표시</span><span>✓ 무료</span></div></div>
+<div class="cols">
+<section class="tool" aria-labelledby="json-title">
+ <div class="tool-tag">01 · CHATGPT EXPORT</div><h2 id="json-title">conversations.json 기본 점검</h2><p>대화 개수와 JSON 형식이 Archive Lens의 지원 형식과 비슷한지 확인합니다. 대화 제목·내용은 표시하지 않아요.</p>
+ <label for="json-file" class="file-label">대화 JSON 파일 선택 <span>.json</span></label><input type="file" id="json-file" accept=".json,application/json" aria-describedby="json-help">
+ <p class="hint" id="json-help">20MB 이하는 전체 JSON 구조를 검사합니다. 그보다 큰 파일은 시작 부분만 살펴보기 때문에 호환성을 확정할 수 없습니다.</p>
+ <div id="json-result" class="result" aria-live="polite" aria-atomic="true">파일을 선택하면 결과가 여기에 표시됩니다.</div>
+ <a class="buy" href="https://www.latpeed.com/products/tej54?utm_source=ai_lab_precheck&utm_medium=owned_site&utm_campaign=20261114&utm_content=json">Archive Lens 1.1 전체 기능 살펴보기 <span>19,000원 · 별도 구매 ↗</span></a>
+</section>
+<section class="tool" aria-labelledby="csv-title">
+ <div class="tool-tag">02 · AD PERFORMANCE CSV</div><h2 id="csv-title">광고 CSV 컬럼 빠른 점검</h2><p>광고비·날짜·설치·광고 ID 등의 헤더가 있는지 검사합니다. 광고 성과 수치나 행 전체는 읽지 않아요.</p>
+ <label for="csv-file" class="file-label">광고 CSV / TSV 파일 선택 <span>.csv .tsv</span></label><input type="file" id="csv-file" accept=".csv,.tsv,text/csv,text/tab-separated-values" aria-describedby="csv-help">
+ <p class="hint" id="csv-help">파일의 앞부분에서 헤더만 확인합니다. 실제 상품의 열 자동 매핑 및 수치 파싱 성공을 보장하지 않습니다.</p>
+ <div id="csv-result" class="result" aria-live="polite" aria-atomic="true">파일을 선택하면 결과가 여기에 표시됩니다.</div>
+ <a class="buy" href="https://www.latpeed.com/products/sb5ge?utm_source=ai_lab_precheck&utm_medium=owned_site&utm_campaign=20261114&utm_content=csv">AdPilot Lite 1.1 전체 기능 살펴보기 <span>29,000원 · 별도 구매 ↗</span></a>
+</section>
+</div>
+<section class="faq">
+<h2>확인 전 알아둘 점</h2>
+<details><summary>이 검사기에서 파일을 외부로 전송하나요?</summary><p>아니요. 브라우저의 File API로 파일을 읽어 로컬 JavaScript에서만 처리합니다. 검사기는 별도 서버 저장, 파일 전송, 외부 통계 스크립트가 없습니다. 사이트 접속 자체의 표준 호스팅 로그는 발생할 수 있습니다.</p></details>
+<details><summary>형식 점검이 성공하면 유료 제품도 반드시 작동하나요?</summary><p>아니요. JSON의 중첩 구조, 대화 분기, 첨부 파일 및 광고 제공사의 CSV 헤더·인코딩·날짜·통화·이벤트 정의에 따라 실제 동작은 달라질 수 있습니다. 검사기는 파일 호환성을 보증하지 않습니다.</p></details>
+<details><summary>대화 내용이나 광고 데이터가 검사 결과에 보이나요?</summary><p>아니요. 대화 수 및 지원 패턴 여부, 광고 컬럼 <em>분류 결과</em>만 표시합니다. 파일 이름·대화 제목·채팅 본문·광고 행의 수치·계정 ID는 표시하지 않습니다.</p></details>
+<details><summary>ChatGPT 대화 내보내기 파일을 어디서 구하나요?</summary><p>ChatGPT에서 본인 계정의 데이터 내보내기 기능으로 받은 압축 파일을 직접 해제한 뒤, 포함된 <code>conversations.json</code>을 선택하세요. 이 페이지는 내 계정에 자동으로 접속하거나 대화를 백업하지 않습니다.</p></details>
+</section>
+<div class="bottom"><h2>검사 결과가 애매한가요?</h2><p>이 무료 페이지는 판매 전 기본 형식 점검입니다. 더 자세한 기능과 제한 사항은 판매 페이지의 상품 설명을 먼저 확인해 주세요.</p><a href="/" class="back">무료 가상 샘플 체험으로 돌아가기 ↗</a></div>
+</main><footer>AI 실전 제작소 · 독립적으로 만든 도구입니다. OpenAI·ChatGPT·Meta·Moloco의 공식 제품이 아니며 제휴 관계가 없습니다. <a href="https://github.com/jeremy-merchant/ai-practical-lab-demos">검사기 코드 확인</a></footer>
+</body>
+</html>

@@ -2,7 +2,7 @@
 
 **Offline tools for people who want to try the workflow before buying.** This repository contains only a fictional-data marketing preview, not the separately sold software. No customer datasets, login credentials, ad account data, or conversation exports are included.
 
-[**Try the free demo (no login)**](https://latpeed-ai-lab-preview.pages.dev/) · [AdPilot Lite](https://www.latpeed.com/products/sb5ge) · [Archive Lens](https://www.latpeed.com/products/tej54)
+[**Try the free demo (no login)**](https://latpeed-ai-lab-preview.pages.dev/) · [**Check your own file format privately**](https://latpeed-ai-lab-preview.pages.dev/check/) · [AdPilot Lite](https://www.latpeed.com/products/sb5ge) · [Archive Lens](https://www.latpeed.com/products/tej54)
 
 ![Screenshot of free demo with synthetic data](preview.png)
 
@@ -39,3 +39,14 @@ Only the public fictional-data demo is included here. Paid archives, private aut
 ## Feedback
 
 Please file a GitHub issue with browser/version and reproducible steps when the *free preview* fails. Do not post actual ChatGPT conversations, ad CSVs, passwords or account identifiers.
+
+
+## Free local file pre-check
+
+Visit [ChatGPT JSON / ad CSV format pre-check](https://latpeed-ai-lab-preview.pages.dev/check/). You may select your own JSON or CSV from disk without signing in.
+
+- JSON: if file is 20MB or smaller, count conversation-like entries, detect mapping and messages fields; larger files are checked for partial header indicators only.
+- CSV/TSV: inspect the header only and suggest likely date, spend, campaign, ad ID, impressions, clicks, install and currency fields.
+- Local File API; no file data is sent over the network, no ad pixels and no analytics SDK.
+- The result is a preliminary structural check, **not a promise the paid application will import the file**.
+- The free source and all restrictions are transparent in check/check.js.
