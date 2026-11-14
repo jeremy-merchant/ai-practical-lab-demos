@@ -51,3 +51,13 @@ Visit [ChatGPT JSON / ad CSV format pre-check](https://latpeed-ai-lab-preview.pa
 - The result is a preliminary structural check, **not a promise the paid application will import the file**.
 - The free source and all restrictions are transparent in check/check.js.
 \n## Support\nBuyer questions: https://latpeed-ai-lab-preview.pages.dev/contact/. Do not send sensitive JSON or ads data in email.\n
+
+## Attribution, not user tracking
+
+The public demo carries an **allowlisted channel name only** through the free
+pre-check and to Latpeed product links when arriving from a listed directory.
+Implementation: attribution.js. No cookies, localStorage, network beacons,
+fingerprinting, source file contents, or account IDs. Channels without a known
+UTM/referrer keep the original product URLs. Whether Latpeed reports campaign
+parameters in seller analytics is not guaranteed. UTM parameters alone do not
+measure visitors, conversions, or purchases.

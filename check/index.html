@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="./check.css">
 <title>ChatGPT JSON·광고 CSV 무료 파일 검사 | AI 실전 제작소</title>
 <script src="./check.js" defer></script>
+<script src="/attribution.js" defer></script>
 </head>
 <body>
 <header><div class="nav"><a class="brand" href="/">AI <span>실전 제작소</span></a><a href="/" class="nav-link">← 무료 체험으로 돌아가기</a></div></header>
@@ -38,7 +39,7 @@
 </div>
 <section class="faq">
 <h2>확인 전 알아둘 점</h2>
-<details><summary>이 검사기에서 파일을 외부로 전송하나요?</summary><p>아니요. 브라우저의 File API로 파일을 읽어 로컬 JavaScript에서만 처리합니다. 검사기는 별도 서버 저장, 파일 전송, 외부 통계 스크립트가 없습니다. 사이트 접속 자체의 표준 호스팅 로그는 발생할 수 있습니다.</p></details>
+<details><summary>이 검사기에서 파일을 외부로 전송하나요?</summary><p>아니요. 브라우저의 File API로 파일을 읽어 로컬 JavaScript에서만 처리합니다. 검사기는 별도 서버 저장, 파일 전송, 외부 통계 스크립트가 없습니다. 사이트 접속 자체의 표준 호스팅 로그는 발생할 수 있습니다. 알려진 유입 경로의 URL 태그만 결제 안내 링크로 전달될 수 있으며, 개인 파일 내용이나 검사 결과는 전달하지 않습니다.</p></details>
 <details><summary>형식 점검이 성공하면 유료 제품도 반드시 작동하나요?</summary><p>아니요. JSON의 중첩 구조, 대화 분기, 첨부 파일 및 광고 제공사의 CSV 헤더·인코딩·날짜·통화·이벤트 정의에 따라 실제 동작은 달라질 수 있습니다. 검사기는 파일 호환성을 보증하지 않습니다.</p></details>
 <details><summary>대화 내용이나 광고 데이터가 검사 결과에 보이나요?</summary><p>아니요. 대화 수 및 지원 패턴 여부, 광고 컬럼 <em>분류 결과</em>만 표시합니다. 파일 이름·대화 제목·채팅 본문·광고 행의 수치·계정 ID는 표시하지 않습니다.</p></details>
 <details><summary>ChatGPT 대화 내보내기 파일을 어디서 구하나요?</summary><p>ChatGPT에서 본인 계정의 데이터 내보내기 기능으로 받은 압축 파일을 직접 해제한 뒤, 포함된 <code>conversations.json</code>을 선택하세요. 이 페이지는 내 계정에 자동으로 접속하거나 대화를 백업하지 않습니다.</p></details>
