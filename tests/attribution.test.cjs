@@ -2,8 +2,9 @@ const assert = require("node:assert/strict");
 const test = require("node:test");
 const fs = require("node:fs");
 const vm = require("node:vm");
+const path = require("node:path");
 
-const script = fs.readFileSync("attribution.js", "utf8");
+const script = fs.readFileSync(path.join(__dirname, "..", "attribution.js"), "utf8");
 const makeAnchor = original => ({
   original,
   href: original,
