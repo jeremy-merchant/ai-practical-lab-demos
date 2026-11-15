@@ -4,6 +4,8 @@
 
 [**Try the free demo (no login)**](https://latpeed-ai-lab-preview.pages.dev/) · [**Check your own file format privately**](https://latpeed-ai-lab-preview.pages.dev/check/) · [AdPilot Lite](https://www.latpeed.com/products/sb5ge) · [Archive Lens](https://www.latpeed.com/products/tej54)
 
+Structured, versioned information for AI-assisted discovery: [llms.txt](https://latpeed-ai-lab-preview.pages.dev/llms.txt). This is a supplemental description, not an endorsement, ranking, or guarantee of indexing.
+
 ![Screenshot of free demo with synthetic data](preview.png)
 
 ## What can you try?
