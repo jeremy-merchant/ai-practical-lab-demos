@@ -6,6 +6,8 @@
 
 Structured, versioned information for AI-assisted discovery: [llms.txt](https://latpeed-ai-lab-preview.pages.dev/llms.txt). This is a supplemental description, not an endorsement, ranking, or guarantee of indexing.
 
+An independent editorial introduction: [Dreamboat — AI 실전 제작소 · ChatGPT 대화 저장 파일 검색과 광고 CSV 점검 도구](https://dreamboat.kr/discover/ai-practical-lab-chatgpt-archive-ad-csv). The article is written by Dreamboat and is not a product certification or sale confirmation.
+
 ![Screenshot of free demo with synthetic data](preview.png)
 
 ## What can you try?

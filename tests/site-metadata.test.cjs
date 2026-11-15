@@ -26,3 +26,11 @@ test('public llms.txt never contains passwords, API keys or customer payloads',(
   const t=read('llms.txt');
   for(const s of ['sk_live_','ghp_','AKIA','Bearer ','-----BEGIN PRIVATE KEY-----','saaskr-verify-'])assert.ok(!t.includes(s),s);
 });
+test('independent Dreamboat introduction is linked without implying official certification',()=>{
+  const home=read('index.html'),repo=read('README.md');
+  const article='https://dreamboat.kr/discover/ai-practical-lab-chatgpt-archive-ad-csv';
+  assert.ok(home.includes(article));
+  assert.ok(repo.includes(article));
+  assert.ok(home.includes('드림보트의 외부 소개 글'));
+  assert.ok(repo.includes('not a product certification'));
+});
